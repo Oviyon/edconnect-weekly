@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
+        <link rel="stylesheet" href="bootstrap.min.css">    
     </header>
-    <nav>
-<a href="index.html">Home</a>
-<a href="search.html">Projects</a>
-<a href="login.html">Login</a>
-<a href="register.html">Register</a>
-<a href="createproject.html">Submit</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">        
+        <a class="navbar-brand" href="#">Project Explorer</a>
+            <form class="form-inline my-2 my-lg-0">
+                <label class="sr-only" for="searchForm"></label>
+                  <input type="text" class="form-control  mr-sm-2" id="searchForm" placeholder="Search Projects">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+            </form> 
+                <a class="nav-link navbar-brand" href="">Submit</a>
+                <div class="collapse navbar-collapse" id="project-explorer"></div>
+                <a class="nav-link navbar-brand" href="register.html">Sign up <span class="sr-only">(current)</span></a> 
+        <a class="nav-link navbar-brand" href="login.html">Login <span class="sr-only">(current)</span></a> 
+    </nav> <br>
     <main>
-        <section>
-            <header>
-                <h2>
-                    Project 1
-                  </h2>
-            </header>
-            <a href="editproject.html">Edit Project</a>
-            <ul>
-                <li>Created By: Jane Bull</li>
-                <li>Date Created: 03/06/2018</li>
-                <li>Last Updated: 03/06/2019</li>
-            </ul>
-        </section><br>
-        <section>
-            <header>
-                <h2>
-                    Project Abstract
-                  </h2>
-                  <div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                        
-                      </p>
-                  </div>
 
-        </section><br>
-        <section>
-            <h2>
-                Project Details
-              </h2>
-              <ul>
-                <li>Authors: John Doe, Jane Doe</li>
-                <li>Tags: #Asphyxia, #GSW</li>
-                <li>Project Files: <a href="search.html">File 1</a>
-                                    <a href="profile.html">File 2</a>
-                </li>
-            </ul>
-        </section><br>
-    </main>
+        <div class="w-auto p-3">
+        <div class="col-sm-12">
+        <div class="container mb-3">
+            <h4>
+                Project 1
+              </h4>
+       
+        <div class="card mb-4 box-shadow bg-light">
+            <div class="container">
+                <section>
+                    <div class="row justify-content-around p-3">
+                        <div class="col">
+                            <div>Created By</div>
+                            <div>Jane Bull</div>
+                        </div>
+                        <div class="col">
+                            <div>Date Created</div>
+                            <div>03/06/2018</div>
+                        </div>
+                        <div class="col">
+                            <div>Last Updated</div>
+                            <div>03/06/2019</div>
+                        </div>
+                        <div class="col text-right">
+                            <button type="submit" class="btn btn-primary">Edit Project</button>
+                        </div>
+                    </div>
+                </section>  
+            </div>
+        </div>
+        <br>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <h6>Project Abstract</h6><hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p><br>
+                    <label class="form-group">Comments</label><br>
+                        <textarea type="text" class="form-control" placeholder="Leave a comment" rows="3"></textarea><br>
+                        <button class="btn btn-primary " type="submit">Submit</button><hr><br>
+                        <p class="text-center text-muted">No comments added yet</p>
+                </div>
+
+                <div class="col">
+                    <h6>Project Details</h6><hr>
+                    <div class="card">
+                        <div class="card-header">
+                            Author(s)
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text text-muted">John Bull</p>
+                            </div>
+                        </div>
+                        <div class="card-footer text-primary">
+                           #web
+                        </div>
+                    </div><br>
+                    <div class="card">
+                        <div class="card-header">
+                          Project files
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <p class="card-text text-muted">No file uploaded yet</p>
+                        </div>
+                        
+                </div>
+                </div>
+</main>
+<br>
+<footer class="text-muted">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">  
+                  <div class="card mb-4 box-shadow bg-light">
+                      <div class="container">
+                          <p class="float-right text-body">.Edconnect</p>
+                          <p class="float-right">Project Explorer &copy; 2020</p>
+                      </div>
+    
+              </div>
+          </div>
+      </div>
+   </footer>
 </html>

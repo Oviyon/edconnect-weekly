@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html>
+ 
     <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
+        <link rel="stylesheet" href="bootstrap.min.css">    
     </header>
-    <nav>
-<a href="index.html">Home</a>
-<a href="search.html">Projects</a>
-<a href="login.html">Login</a>
-<a href="register.html">Register</a>
-<a href="createproject.html">Submit</a>
-    </nav>
-    <main>        
-    <section>
-            <h2>
-               Search Project By 
-            </h2>
-           <form name="searchForm">
-               <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"><br><br>
-            <label>Search By:</label><br><br>
-            <select name="searchType"> 
-                <option value="Name">Name</option>
-                <option value="Authors">Authors</option>
-                <option value="Abstract">Abstract</option>
-                <option value="Tags">Tags</option>
-            </select><br><br>
-            <input type="submit" value="Search">
-           </form>
-    </section><br>
-    <section>
-           <header>
-              <h2>Search Result </h2> 
-            </header> 
-           <div>
-            <header>
-                <h3>Project 1 </h3> 
-              </header> 
-              <ul>
-                  <li>Name:Project 1</li>
-                  <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li>Programs: Computer Technology</li>
-                  <li>Authors: John Bull, Jane Bull</li>
-                  <li>Tags: hwxyz luv13</li>
-                  <li>Year: 2020</li>
-              </ul>
-           </div>
-    </section>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">        
+        <a class="navbar-brand" href="#">Project Explorer</a>
+            <form class="form-inline my-2 my-lg-0">
+                <label class="sr-only" for="searchForm"></label>
+                  <input type="text" class="form-control  mr-sm-2" id="searchForm" placeholder="Search Projects">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+            </form> 
+                <a class="nav-link navbar-brand" href="">Submit</a>
+                <div class="collapse navbar-collapse" id="project-explorer"></div>
+                <a class="nav-link navbar-brand" href="register.html">Sign up <span class="sr-only">(current)</span></a> 
+        <a class="nav-link navbar-brand" href="login.html">Login <span class="sr-only">(current)</span></a> 
+    </nav> <br>
+    
+    <main>  
+        <div class="w-auto p-3">
+            <div class="container">      
+                <section>
+                    <h2>
+                        Photo Gallery
+                    </h2>
+                </section>
+                    <div class="container p3 bg-light">
+                            <form>
+                            <div class="form-row align-items-center">
+                                <div class="form-group col-md-6 my-3">
+                                        <input type="text" class="form-control form-control-lg" name="searchTerm" placeholder="Search project name, authors, abstract, tags">
+                                    </div>
+                                                <div class="form-group col-sm-4 my-3">
+                                                        <label class="form-label sr-only">Search By:</label>
+                                                        <div class="input-group">
+                                                        <div class="input-group-prepend">  
+                                                          <div class="input-group-text">Search by</div>
+                                                        </div>
+                                                        <select class="form-control form-control-lg" name="searchType"> 
+                                                            <option value="Name">Name</option>
+                                                            <option value="Authors">Authors</option>
+                                                            <option value="Abstract">Abstract</option>
+                                                            <option value="Tags">Tags</option>
+                                                        </select> 
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary my-1">Submit</button>
+                        </form>
+                    </div>                      
+        </div>    
+<br>
+            <section class="text-muted">
+                <p class="float-left text-body">All projects</p>
+                <p class="float-left">(0 results)</p>
+            </section>  
+            <br><br>
+                <div class="row">
+                    <div class="col-sm-4"> 
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas rutrum eleifend. Quisque sed leo ut mi auctor vulputate ut a nisl. Etiam quis tellus eleifend, pharetra dui vitae, tempus arcu.</p>
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a> 
+                            <a href="#" class="card-link">#javascript</a>      
+                            </div>           
+                        </div>     
+                    </div>  
+                    <div class="col-sm-4"> 
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Project Title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas rutrum eleifend. Quisque sed leo ut mi auctor vulputate ut a nisl. Etiam quis tellus eleifend, pharetra dui vitae, tempus arcu.</p>
+                            <a href="#" class="card-link">#html</a>
+                            <a href="#" class="card-link">#css</a> 
+                            <a href="#" class="card-link">#javascript</a>      
+                            </div>           
+                        </div>     
+                    </div>  
+                </div>
+            </div>
+    </div>
     </main>
+    <footer class="text-muted">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">  
+                      <div class="card mb-4 box-shadow bg-light">
+                          <div class="container">
+                              <p class="float-right text-body">.Edconnect</p>
+                              <p class="float-right">Project Explorer &copy; 2020</p>
+                          </div>
+                          
+                  </div>
+              </div>
+          </div>
+       </footer>
 </html>
